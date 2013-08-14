@@ -21,3 +21,9 @@ group :assets do
 	gem 'coffee-rails', '~> 4.0.0'
 end
 
+gem 'turbolinks'
+
+gem 'bootstrap-sass', '~>2.2.2.0'
+
+#to stop the 'could not determine content length of response body warning'
+gem "webrick", "1.3.1" 
