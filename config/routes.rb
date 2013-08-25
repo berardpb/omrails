@@ -1,8 +1,11 @@
 Omrails::Application.routes.draw do
   
-  get 'about' => 'pages#about'
-
+  devise_for :users
   root 'pages#home'
+  # this was code from one month rails - get 'about' => 'pages#about'
+  match '/about', to: 'pages#about', via: 'get'
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
