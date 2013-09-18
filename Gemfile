@@ -5,7 +5,7 @@ ruby '1.9.3'
 gem 'rails', '4.0.0.rc2'
 gem 'jquery-rails'
 gem 'devise'
-gem 'simple_form'
+gem 'simple_form', '3.0.0.rc' # trying to fix form-horizontal problem; didn't work, still doing more to fix
 
 group :production do
 	gem 'pg', '0.15.1'
