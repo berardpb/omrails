@@ -6,6 +6,7 @@ gem 'rails', '4.0.0.rc2'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form', '3.0.0.rc' # trying to fix form-horizontal problem; didn't work, still doing more to fix
+gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
 
 group :production do
 	gem 'pg', '0.15.1'

@@ -8,6 +8,10 @@ class PinsController < ApplicationController
     @pins = Pin.all
   end
 
+  def pin_params
+     params.require(:pin).permit(:description, :image)
+  end
+
   # GET /pins/1
   def show
   end
@@ -63,3 +67,4 @@ class PinsController < ApplicationController
       params.require(:pin).permit(:description)
     end
 end
+
